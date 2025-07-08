@@ -24,5 +24,8 @@ services:
       dockerfile: composer.dockerfile
     volumes:
       - "./src:/var/www/html"
+      - "./composer/global:/tmp"
+    stdin_open: true
+    tty: true
 #   artisan:
 #   npm:

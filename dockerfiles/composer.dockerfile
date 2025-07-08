@@ -2,4 +2,6 @@ FROM composer
 
 WORKDIR /var/www/html
 
-ENTRYPOINT ["composer" , "-ignore-platform-reqs"]
+# RUN "composer global require laravel/installer"
+
+ENTRYPOINT [ "composer","--ignore-platform-reqs"  ]
