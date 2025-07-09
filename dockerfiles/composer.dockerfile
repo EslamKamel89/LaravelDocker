@@ -2,6 +2,6 @@ FROM composer
 
 WORKDIR /var/www/html
 
-# RUN "composer global require laravel/installer"
+ENV PATH="/tmp/vendor/bin:${PATH}"
 
-ENTRYPOINT [ "composer","--ignore-platform-reqs"  ]
+# ENTRYPOINT [ "composer","--ignore-platform-reqs"  ]
